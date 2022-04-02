@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            background-color:#f4f4f4 ;
+            line-height: 1.5em;
+        }
+        header{
+            background-color: #333;
+            color: #ffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+        .container{
+            padding: 10px;
+            margin: auto;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>JQuery Crash Course | Selectors</header>
+    <div class="container">
+        <h1 id="heading1">Heading1</h1>
+        <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span>Quae neque molestias placeat</span>, consequuntur, sapiente magni eaque provident quas laborum tempora 
+            veritatis quo qui est. Cum nemo ullam ducimus iusto iure!</p>
+         <h1 class="heading2">Heading2</h1>
+        <p class="para2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span>Quae neque molestias placeat</span>, consequuntur, sapiente magni eaque provident quas laborum tempora 
+            veritatis quo qui est. Cum nemo ullam ducimus iusto iure!</p>
+            <span>Quae neque molestias placeat</span>
+        <ul id="list">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
+        <input type="button" value="button">
+        <input type="submit" value="submit">
+        <input type="text">
+        <a href="https//:google.com">google</a>
+        <a href="https//:yahoo.com">yahoo</a>
+    </div>
+    <script>
+        //$('h1').hide()
+        //$('h1#heading1').hide()
+       // $('h1.heading2').hide()
+       // $('p span').css('color','red')
+       // $('span').css('color','red')
+       $('ul#list li:first').css('color','red')
+       $('ul#list li:last').css('color','green')
+       $('ul#list li:even').css('background','yellow')
+       $('ul#list li:odd').css('background','#cccccc')
+       $('ul#list li:nth-child(3n)').css('list-style','none')
+       $(':button').hide()
+       $('[href]').css('color','red')
+       $('a[href="https//:yahoo.com"]').css('color','green')
+       //$('*').hide()
+    </script>
+</body>
+</html>
